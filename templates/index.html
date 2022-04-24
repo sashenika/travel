@@ -1,0 +1,98 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+ <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li>
+            <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>
+            <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="/static/img/KAREL1.jpg" class="d-block w-100" alt="..." style="width:50%;height:360px">
+            </div>
+            <div class="carousel-item">
+                <img src="/static/img/KAREL2.jpg" class="d-block w-100" alt="..." style="width:50%;height:360px">
+            </div>
+            <div class="carousel-item">
+                <img src="/static/img/KAREL3.jpg" class="d-block w-100" alt="..." style="width:50%;height:360px">
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </a>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+
+     <h1 class="text-center m-3"> ------------------- </h1>
+    <div class="container">
+        <div class="accordion" accordion-flush" id="accordion">
+            <div class="accordion-item">
+                <h3 class="accordion-header" id="one">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-one" aria-expanded="true" aria-controls="collapse-one">
+                    <h2 class="text-success">История водного туризма в России</h2>
+                </button>
+                </h3>
+                <div id="collapse-one" class="accordion-collapse collapse" aria-labelledby="one" data-bs-parent="#accordion">
+                    <h5 div class="accordion-body text-wrap" style="width: 60rem;">
+
+                        <p class="text-start">Первый задокументированный случай прохождения бурного участка реки в России для удовольствия – это сплав Петра Первого по реке Мста на ялике. </p>
+                        <p class="text-start">Бурный рост любительского водного туризма начался в 60-е годы. Появилось много талантливых бардов, чьи песни до сих пор звучат у костра, например, любимая всеми туристами песня <a href="https://youtu.be/g8xRy-hl9Lc">«Солнышко лесное». </a> Основной сплав в это время осуществлялся на деревянных плотах. В это же время стали зарождаться первые туристические клубы, разрабатываться маршруты и проводиться соревнования. </p>
+                        <p class="text-start">Первая легендарная каркасная байдарка «Таймень» появилась в 70-е годы и на долгое время стала королевой водного туризма. С ее помощью наши дедушки и бабушки активно осваивали речушки, реки и озера огромной страны.</p>
+                        <p class="text-start">В конце 70-х появился первый спортивный катамаран. Его создатель – москвич Сергей Папуш. Судно прошло испытания сложнейшими реками Советского Союза и показало себя только с лучшей стороны. Разборные суда (катамараны) отлично подходили для транспортировки и хорошо вели себя на любой воде.</p>
+                        <p class="text-start">Несмотря на трудности 90-х. самостоятельные походы оставались любимым спортивным и семейным отдыхом. Туристы сами научились шить байдарки, катамараны, палатки, клеить гермомешки. Наиболее удачные конструкции и выкройки ценились очень высоко и передавались от туриста туристу.</p>
+                        <p class="text-start">В настоящее время стал доступен опыт зарубежных коллег, появилось новое снаряжение и материалы, поэтому, водный туризм в России быстро развивается. Появилось новое поколение водников, выросшее на романтических традициях старой школы с её походами и песнями у костра, но вносящее в них современные мотивы, такие как соревнования, использование нового снаряжения и новых судов.</p>
+                        <p class="text-start">В нашем городе туристический клуб <a href="http://tk-globus.ru/index.php/o-nas">'Глобус' </a> существует уже более 50 лет. В нем занимались мои дедушка и бабушка, папа и мама, а теперь и я!</p>
+
+                    </h5>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h3 class="accordion-header" id="two">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-two" aria-expanded="false" aria-controls="collapse-two">
+                    <h2 class="text-success">Безопасность в водном походе - кодекс водника</h2>
+                </button>
+                </h3>
+                <div id="collapse-two" class="accordion-collapse collapse" aria-labelledby="two" data-bs-parent="#accordion">
+                    <h5 div class="accordion-body text-wrap" style="width: 60rem;" >
+                        <p class="text-start" >•	Быть грамотным плавцом, способным управлять собой под водой. </p>
+                        <p class="text-start" >•	Всегда находиться в спасательном жилете и шлеме. </p>
+                        <p class="text-start" >•	Держать себя в руках в критической ситуации. </p>
+                        <p class="text-start" >•	Никогда не ходить в одиночку. Минимальная группа — 3 человека.	</p>
+                        <p class="text-start" >•	Освоить самопомощь и первую помощь, включая спасение с опрокинутого судна. </p>
+                        <p class="text-start" >•	Хорошо изучить плавсредство и маршрут до похода.	</p>
+                        <p class="text-start" >•	Спасать себя и группу, а не снаряжение. </p>
+
+                    </h5>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h3 class="accordion-header" id="three">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-three" aria-expanded="false" aria-controls="collapse-three">
+                    <h2 class="text-success">Снаряжение и экипировка </h2>
+                </button>
+                </h3>
+                <div id="collapse-three" class="accordion-collapse collapse" aria-labelledby="three" data-bs-parent="#accordion">
+                    <h5 div class="accordion-body text-wrap" style="width: 60rem;">
+
+                        <p class="text-start" > В зависимости от плавсредства, снаряжение и экипировка туриста-водника имеет свои особенности.</p>
+                        <p class="text-start" > Есть несколько особенно важных деталей личного снаряжения, необходимых во время пребывания на воде, о которых стоит упомянуть в рамках общих правил:</p>
+                        <p class="text-start" >•	Спасательный жилет. Даже если вы мастер спорта по плаванию, речным водоворотам нет до этого дела. Если непредвиденная ситуация на белой воде приведет к потере сознания — спасет только жилет.</p>
+                        <p class="text-start" >•	Защита головы обязательна во время коммерческих туристических сплавов. Не стоит пренебрегать ею и в «диких» походах. Особенно актуальны легкие и прочные шлемы при прохождении бурных порожистых рек на рафтах и катамаранах.</p>
+                        <p class="text-start" >•	Гидрокостюм и штормовой непромокаемый костюм незаменимы в длительных путешествиях.</p>
+                        <p class="text-start" >•	Закрытая легкая обувь, специальные водные тапочки. Босиком категорически запрещено находиться на судне, спрыгивать с него. Не очевидно, но на роль обуви для водного похода подходят разношенные кеды с дырочками-вентиляцией. Главное, чтобы в ней не стояла вода и ступня была закрыта .</p>
+
+                    </h5>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

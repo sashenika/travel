@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>Authorisation</h1>
+
+<div class="table_container">
+<table class="my_table" style="width: 80%;">
+    <tr class="my_row">
+    <td style="width: 40%;"> <img src="/static/img/parus.jpg" class="img-thumbnail" alt="My foto"></td>
+    <td>
+    <form action="" method="post">
+        {{ form.hidden_tag() }}
+        <p>
+            <div class="alert alert-success" role="alert">
+            {{ form.email.label }}<br>
+        </div>
+
+            {{ form.email(class="form-control", type="email") }}<br>
+
+            {% for error in form.email.errors %}
+                <div class="alert alert-danger" role="alert">
+                    {{ error }}
+                </div>
+            {% endfor %}
+        </p>
+        <p>
+            <div class="alert alert-success" role="alert">
+            {{ form.password.label }}<br>
+        </div>
+            {{ form.password(class="form-control", type="password") }}<br>
+            {% for error in form.password.errors %}
+                <div class="alert alert-danger" role="alert">
+                    {{ error }}
+                </div>
+            {% endfor %}
+        </p>
+        <p>{{ form.remember_me() }} {{ form.remember_me.label }}</p>
+        <p>{{ form.submit(type="submit", class="btn btn-primary") }}</p>
+        <div>{{ message }}</div>
+    </form>
+         </td></tr>
+
+    </table>
+</div>
+{% endblock %}

@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Любимые маршруты</h1>
+{% if current_user.is_authenticated %}
+    <a href="ways" class="btn btn-secondary">Добавить</a>
+{% endif %}
+{% for item in ways%}
+<div class="col-md6 border rounded">
+    <br>
+    <h2>Маршрут #{{item.id}}</h2>
+    <p align="right"><a href="{{item.url}}"> Карта # {{item.iname}} </a></p>
+    <div>
+        <table width=100% cellspacing="5" cellpadding="10">
+            <tr>
+                <td width=60% class="alert alert-info" role="alert">Маршрут</td>
+                <td class="alert alert-info" role="alert">Категория</td>
+                <td class="alert alert-info" role="alert">Длительность</td>
+                <td class="alert alert-info" role="alert">Руководитель</td>
+                <td width="30%" class="alert alert-info" role="alert">Карта</td>
+            </tr>
+            <tr>
+                <td align="justify">{{item.way}}</td>
+                <td align="center">{{item.categor}}</td>
+                <td align="center">{{item.work_size}}</td>
+                <td>{{item.leader}}</td>
+                <!--{% if item.is_finished %}
+                    <td class="alert alert-success" role="alert">Пройден</td>
+                {% else %}
+                    <td class="alert alert-danger" role="alert">Не пройден</td>
+                {% endif %} -->
+                <td ><img src={{item.url}} width="300" height="300" border="2"> </td>
+            </tr>
+        </table>
+    </div>
+    {% if current_user.is_authenticated and current_user == item.user %}
+    <div>
+        <a href="/ways/{{ item.id }}" class="btn btn-warning">
+            Редактировать
+        </a>
+        <a href="/ways_delete/{{ item.id }}" class="btn btn-danger">
+            Удалить
+        </a>
+    </div>
+    {% endif %}
+</div>
+{% endfor %}
+{% endblock %}
